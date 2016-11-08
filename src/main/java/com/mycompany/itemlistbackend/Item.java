@@ -13,20 +13,21 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 public class Item {
+
     private int id;
     private String name;
-    private int price;
+    private float price;
     private int count;
-    
-    public Item(int i,String n, int p){
+
+    public Item(int i, String n, float p) {
         id = i;
         name = n;
         price = p;
         count = 0;
     }
-    
-    public Item(){
-        
+
+    public Item() {
+
     }
 
     public int getId() {
@@ -37,7 +38,7 @@ public class Item {
         return name;
     }
 
-    public int getPrice() {
+    public float getPrice() {
         return price;
     }
 
@@ -53,13 +54,12 @@ public class Item {
         this.name = name;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 
     public void setCount(int count) {
         this.count = count;
     }
-    
-    
+
 }
